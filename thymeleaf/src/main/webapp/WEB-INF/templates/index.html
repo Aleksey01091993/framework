@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Login and Signup Form</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/style.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container forms">
+      <div class="form login">
+        <div class="form-content">
+          <header>Войти</header>
+
+          <form action="#">
+            <div class="field input-field">
+              <input type="email" placeholder="Эл.почта" class="input" />
+            </div>
+
+            <div class="field input-field">
+              <input type="password" placeholder="Пароль" class="password" />
+              <i class="bx bx-hide eye-icon"></i>
+            </div>
+
+            <div class="form-link">
+              <a href="#" class="forgot-pass">Забыли пароль?</a>
+            </div>
+
+            <div class="field button-field">
+              <button>Войти в аккаунт</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="media-options">
+          <a href="#" class="field google">
+            <svg
+              class="google-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.2395 6.49908C13.9971 6.49908 15.1827 7.25828 15.8587 7.89268L18.5003 5.31348C16.8779 3.80548 14.7667 2.87988 12.2395 2.87988C8.57873 2.87988 5.41713 4.98068 3.87793 8.03828L6.90433 10.3887C7.66353 8.13188 9.76433 6.49908 12.2395 6.49908V6.49908Z"
+                fill="#FF5454"
+              />
+              <path
+                d="M21.2258 12.4478C21.2258 11.6782 21.1634 11.1166 21.0282 10.5342H12.2402V14.0078H17.3986C17.2946 14.871 16.733 16.171 15.485 17.0446L18.4386 19.3326C20.2066 17.6998 21.2258 15.2974 21.2258 12.4478V12.4478Z"
+                fill="#706FF4"
+              />
+              <path
+                d="M6.91508 14.0909C6.71748 13.5085 6.60308 12.8845 6.60308 12.2397C6.60308 11.5949 6.71748 10.9709 6.90468 10.3885L3.87828 8.03809C3.24388 9.30689 2.87988 10.7317 2.87988 12.2397C2.87988 13.7477 3.24388 15.1725 3.87828 16.4413L6.91508 14.0909V14.0909Z"
+                fill="#FAC741"
+              />
+              <path
+                d="M12.2399 21.5996C14.7671 21.5996 16.8887 20.7676 18.4383 19.3324L15.4847 17.0444C14.6943 17.5956 13.6335 17.9804 12.2399 17.9804C9.76467 17.9804 7.66387 16.3476 6.91507 14.0908L3.88867 16.4412C5.42787 19.4988 8.57907 21.5996 12.2399 21.5996V21.5996Z"
+                fill="#1CCDA2"
+              />
+            </svg>
+
+            <span>Войти с помощью Google</span>
+          </a>
+        </div>
+        <div class="form-link">
+          <span
+            >Нет аккаунта?
+            <a href="#" class="link signup-link">Зарегистрироваться</a></span
+          >
+        </div>
+      </div>
+
+      <!-- Signup Form -->
+
+      <div class="form signup">
+        <div class="form-content">
+          <header>Регистрация</header>
+
+          <form action="#">
+            <div class="field input-field">
+              <input
+                type="text"
+                name="name"
+                placeholder="Имя"
+                required
+                minlength="4"
+                maxlength="24"
+                class="input"
+              />
+            </div>
+            <div class="field input-field">
+              <input type="email" placeholder="Эл.почта" class="input" />
+            </div>
+
+            <div class="field input-field">
+              <input
+                type="password"
+                placeholder="Создать пароль"
+                class="password"
+              />
+              <i class="bx bx-hide eye-icon"></i>
+            </div>
+
+            <div class="field button-field">
+              <button>Зарегистрироваться</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="line"></div>
+
+        <div class="media-options">
+          <a href="#" class="field google">
+            <svg
+              class="google-icon"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.2395 6.49908C13.9971 6.49908 15.1827 7.25828 15.8587 7.89268L18.5003 5.31348C16.8779 3.80548 14.7667 2.87988 12.2395 2.87988C8.57873 2.87988 5.41713 4.98068 3.87793 8.03828L6.90433 10.3887C7.66353 8.13188 9.76433 6.49908 12.2395 6.49908V6.49908Z"
+                fill="#FF5454"
+              />
+              <path
+                d="M21.2258 12.4478C21.2258 11.6782 21.1634 11.1166 21.0282 10.5342H12.2402V14.0078H17.3986C17.2946 14.871 16.733 16.171 15.485 17.0446L18.4386 19.3326C20.2066 17.6998 21.2258 15.2974 21.2258 12.4478V12.4478Z"
+                fill="#706FF4"
+              />
+              <path
+                d="M6.91508 14.0909C6.71748 13.5085 6.60308 12.8845 6.60308 12.2397C6.60308 11.5949 6.71748 10.9709 6.90468 10.3885L3.87828 8.03809C3.24388 9.30689 2.87988 10.7317 2.87988 12.2397C2.87988 13.7477 3.24388 15.1725 3.87828 16.4413L6.91508 14.0909V14.0909Z"
+                fill="#FAC741"
+              />
+              <path
+                d="M12.2399 21.5996C14.7671 21.5996 16.8887 20.7676 18.4383 19.3324L15.4847 17.0444C14.6943 17.5956 13.6335 17.9804 12.2399 17.9804C9.76467 17.9804 7.66387 16.3476 6.91507 14.0908L3.88867 16.4412C5.42787 19.4988 8.57907 21.5996 12.2399 21.5996V21.5996Z"
+                fill="#1CCDA2"
+              />
+            </svg>
+            <span>Войти с помощью Google</span>
+          </a>
+        </div>
+        <div class="form-link">
+          <span
+            >Уже есть аккаунт?
+            <a href="#" class="link login-link">Войти</a></span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script src="../../js/script.js"></script>
+  </body>
+</html>
