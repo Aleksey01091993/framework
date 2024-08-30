@@ -1,4 +1,4 @@
-package aleksey;
+package aleksey.config;
 
 
 import org.springframework.beans.BeansException;
@@ -19,7 +19,7 @@ import org.thymeleaf.templatemode.TemplateMode;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan
+@ComponentScan(basePackages = "aleksey.controller")
 public class SpringWebConfig implements WebMvcConfigurer, ApplicationContextAware {
 
     private ApplicationContext applicationContext;
