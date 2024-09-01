@@ -1,14 +1,12 @@
 package aleksey;
 
 
-import aleksey.config.SpringBusinessConfig;
-import aleksey.config.SpringWebConfig;
 import jakarta.servlet.Filter;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.core.annotation.Order;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-
+@Order(1)
 public class SpringWebApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 
     public static final String CHARACTER_ENCODING = "UTF-8";
@@ -19,17 +17,14 @@ public class SpringWebApplicationInitializer extends AbstractAnnotationConfigDis
     }
 
 
-
-
-
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class<?>[] { SpringBusinessConfig.class };
+        return null;
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class<?>[] { SpringWebConfig.class};
+        return new Class<?>[]{ApplicationConfiguration.class};
     }
 
     @Override
