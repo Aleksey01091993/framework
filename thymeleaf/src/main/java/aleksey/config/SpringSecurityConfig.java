@@ -27,6 +27,7 @@ public class SpringSecurityConfig {
                         .loginPage("/hello"))
                 .authorizeHttpRequests(authorize -> authorize
                         .requestMatchers(
+                                new AntPathRequestMatcher("/test/**"),
                                 new AntPathRequestMatcher("/hello"),
                                 new AntPathRequestMatcher("/css/**"),
                                 new AntPathRequestMatcher("/images/**"),

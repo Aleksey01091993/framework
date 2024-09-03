@@ -1,4 +1,4 @@
-package aleksey.security;
+package aleksey.config;
 
 
 import org.springframework.beans.BeansException;
